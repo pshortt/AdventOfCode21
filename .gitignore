@@ -1,2 +1,4 @@
 */__pycache__
 *.input
+.vscode
+launcher.json

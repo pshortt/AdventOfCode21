@@ -7,17 +7,20 @@ class TestSolveDay2(unittest.TestCase):
         pass
 
     def test_example1(self):
-        self.assertEqual(solve_part1('example.input'), 150)
+        self.assertEqual(solve_part1('day2/example.input'), 150)
 
     def test_puzzle1(self):
-        self.assertEqual(solve_part1('puzzle.input'), 2117664)
+        self.assertEqual(solve_part1('day2/puzzle.input'), 2117664)
 
     def test_example2(self):
-        self.assertEqual(solve_part2('example.input'), 900)
+        self.assertEqual(solve_part2('day2/example.input'), 900)
 
     def test_puzzle2(self):
-        self.assertEqual(solve_part2('puzzle.input'), 2073416724)
+        self.assertEqual(solve_part2('day2/puzzle.input'), 2073416724)
 
         
 if __name__ == '__main__':
-    unittest.main()
+    try:
+        unittest.main()
+    except:
+        pass
