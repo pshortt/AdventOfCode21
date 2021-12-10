@@ -1,7 +1,7 @@
 import unittest
 from day4 import solve_part1, solve_part2
 
-class TestSolveDay4(unittest.TestCase):
+class test_solve_day4(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         pass
