@@ -2,3 +2,4 @@
 *.input
 .vscode
 launcher.json
+node_modules
