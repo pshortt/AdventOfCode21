@@ -2,10 +2,6 @@ import unittest
 from day4 import solve_part1, solve_part2
 
 class test_solve_day4(unittest.TestCase):
-    @classmethod
-    def setUpClass(self):
-        pass
-
     def test_example1(self):
         self.assertEqual(solve_part1('day4/example.input'), 4512)
 

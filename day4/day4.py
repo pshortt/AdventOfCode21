@@ -9,10 +9,8 @@ def solve_part2(filename):
     return result
 
 def readlines(filename):
-    f = open(filename)
-    lines = [l.strip() for l in f.readlines()]
-    f.close()
-    return lines
+    with open(filename) as f:
+        return [l.strip() for l in f.readlines()]
 
 class bingo_game():
     def __init__(self, bingo_system_output, part):
