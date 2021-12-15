@@ -24,14 +24,14 @@ const allPoints = function(content, part1=false){
                         .map(startToEnd => new line(startToEnd))
                         .filter((part1 ? l => (l.isHorizontal() || l.isVertical()) : () => true))                      
     return lines.map(l => l.points()) // expand list of line object to list of all points being plotted
-                .reduce((previousValue, currentValue) => previousValue.concat(currentValue), [])
+                .reduce((p, c) => p.concat(c), [])
 }
 const reduceFraction = function (n,d){
     var gcd = function gcd(a,b){
       return b ? gcd(b, a%b) : a
     }
-    gcd = gcd(Math.abs(n),Math.abs(d));
-    var result = [n/gcd, d/gcd] // always preserve negative sign
+    gcd = gcd(Math.abs(n),Math.abs(d))  // always preserve negative sign
+    var result = [n/gcd, d/gcd]
     return result
 }
 // helper classes
