@@ -1,14 +1,14 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import sys, os
 sys.path.append(os.getcwd())
 from solution import Solution
 
 @dataclass  
 class DayNSolution(Solution):
-    '''field to represent input'''
+    input: list = field(default_factory = list)
     
     def __post_init__(self):
-        '''set input field with self.input()'''
+        self.input = self.input()
     
     def solve_part1(self):
         return 0

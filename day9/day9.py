@@ -10,7 +10,7 @@ class Day9Solution(Solution):
     matrix: list = field(default_factory = list)
     
     def __post_init__(self):
-        self.matrix = self.input()
+        self.matrix = self.raw_input()
     
     def solve_part1(self):
         return np.array([int(self.matrix[x][y]) + 1 for x, y in self.low_points()]).sum()

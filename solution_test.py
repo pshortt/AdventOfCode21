@@ -9,14 +9,14 @@ class SolutionTest(Solution):
         '''
         Return sum of first line
         '''
-        input = self.input()[0]
+        input = self.raw_input()[0]
         return array([int(c) for c in input]).sum()
     
     def solve_part2(self) -> int:
         '''
         Return product of first line
         '''
-        input = self.input()[0]
+        input = self.raw_input()[0]
         return array([int(c) for c in input]).prod()
     
 if __name__ == '__main__':

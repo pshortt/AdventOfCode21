@@ -21,6 +21,6 @@ class Solution():
         return
 
     # Class methods
-    def input(self):
+    def raw_input(self):
        with open(self.filename) as f:
             return [l.strip() for l in f.readlines()]    
