@@ -1,5 +1,6 @@
 # , \d+
-import unittest, sys
+import unittest, sys, os
+sys.path.append(os.getcwd())
 from day10 import Day10Solution
 
 class test_solve_day10(unittest.TestCase):

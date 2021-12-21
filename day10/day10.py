@@ -1,7 +1,8 @@
 from dataclasses import dataclass, field
 import sys, os
-from numpy import array
 sys.path.append(os.getcwd())
+from numpy import array
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from solution import Solution
 
 def opening_parentheses():
@@ -36,7 +37,7 @@ class Lang():
         '''
         Check for syntax errors within the context of a single line of code
         '''
-        openers = []
+        openers = [] # stack to contain opening parenthesis chars we find
         for c in line:
             if self.is_char_opener(c):
                 openers.append(c)
