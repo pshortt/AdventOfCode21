@@ -3,8 +3,7 @@ import unittest, sys
 from dayN import DayNSolution
 
 class test_solve_dayN(unittest.TestCase):
-    @classmethod
-    def setUpClass(self):
+    def setUp(self):
         self.example = DayNSolution('dayN/example.input')
         self.puzzle = DayNSolution('dayN/puzzle.input')
 
