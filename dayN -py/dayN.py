@@ -17,13 +17,11 @@ class DayNSolution(Solution):
         return 0
     
 def main():
-    try:
-        p1 = DayNSolution('example.input').solve_part1()
-        print(f'solve_part1: {p1}')
-        p2 = DayNSolution('example.input').solve_part2()
-        print(f'solve_part1: {p2}')
-    except:
-        print(f'Error: {sys.exc_info()[0]} : {sys.exc_info()[1]}')
+    inp = 'example.input'
+    p1 = DayNSolution(inp).solve_part1()
+    print(f'solve_part1: {p1}')
+    p2 = DayNSolution(inp).solve_part2()
+    print(f'solve_part1: {p2}')
 
 if __name__ == '__main__':
     main()
