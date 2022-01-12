@@ -7,16 +7,20 @@ class TestSolveCountIncrease(unittest.TestCase):
         pass
 
     def test_example01(self):
-        self.assertEqual(solve_part1('day1/example.input'), 7)
+        self.assertEqual(solve_part1('day1/example.input'),
+                         7)
 
     def test_puzzle01(self):
-        self.assertEqual(solve_part1('day1/puzzle.input'), 1564)
+        self.assertEqual(solve_part1('day1/puzzle.input'),
+                         1564)
 
     def test_example02(self):
-        self.assertEqual(solve_part2('day1/example.input'), 5)
+        self.assertEqual(solve_part2('day1/example.input'),
+                         5)
 
     def test_puzzle02(self):
-        self.assertEqual(solve_part2('day1/puzzle.input'), 1611)
+        self.assertEqual(solve_part2('day1/puzzle.input'),
+                         1611)
         
 if __name__ == '__main__':
     try:
